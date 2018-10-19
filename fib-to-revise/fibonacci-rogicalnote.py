@@ -4,11 +4,18 @@ Created on Fri Oct 12 16:57:19 2018
 
 @author: Takuto
 """
+import sys
+sys.setrecursionlimit(10000)
+
 def fib(n):
-    if n >= 2:
+    a,b=0,1
+    if n>=2:
         return fib(n-1) + fib(n-2)
+    elif n==0:
+        return a
     else:
-        return 1
+        return b
+
 print(fib(2018))
 
 

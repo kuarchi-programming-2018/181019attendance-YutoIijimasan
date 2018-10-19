@@ -8,7 +8,7 @@ def fib(n):
         z=x+y
         x=y
         y=z
-    return x
+    return y
             
 
 print(fib(2018)) 
